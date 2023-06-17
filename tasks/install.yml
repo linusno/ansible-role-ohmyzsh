@@ -2,7 +2,7 @@
 
 - name: Install dependencies
   become: true
-  apt:
+  ansible.builtin.package:
     pkg:
       - git
       - zsh
